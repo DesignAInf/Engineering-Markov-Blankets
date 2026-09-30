@@ -1,0 +1,609 @@
+{
+ "params": {
+  "T": 30,
+  "rho": 0.6,
+  "kappa": 0.5,
+  "seed": 20260930,
+  "N_main": 200000,
+  "N_sweep": 100000,
+  "N_remedies": 50000
+ },
+ "E1": {
+  "reff": [
+   0.6,
+   0.59866,
+   0.62426,
+   0.63062,
+   0.63965,
+   0.64298,
+   0.6487,
+   0.65377,
+   0.65904,
+   0.66205,
+   0.66218,
+   0.66454,
+   0.66745,
+   0.66872,
+   0.67086,
+   0.67057,
+   0.67496,
+   0.67409,
+   0.67602,
+   0.67662,
+   0.67815,
+   0.67818,
+   0.6789,
+   0.67848,
+   0.67916,
+   0.68062,
+   0.68013,
+   0.68056,
+   0.68106,
+   0.68088
+  ],
+  "max_abs_marginal_diff": 0.0021400000000000308,
+  "A_naive": {
+   "accuracy": 0.76239,
+   "mean_confidence": 0.9954146841555569,
+   "lockin": 0.19345,
+   "log_loss": 1.8382319006822356
+  },
+  "B_naive": {
+   "accuracy": 0.984885,
+   "mean_confidence": 0.9846845681614239,
+   "lockin": 0.000605,
+   "log_loss": 0.040821851913137974
+  },
+  "A_aligned": {
+   "accuracy": 0.902225,
+   "mean_confidence": 0.9018552156553592,
+   "lockin": 0.001015,
+   "log_loss": 0.2372772096983459
+  },
+  "naive_A_P_wrong_at_T_given_wrong_at_10": 0.8561312100976004,
+  "naive_A_P_wrong_at_10": 0.27254
+ },
+ "E2_kappa_sweep": [
+  {
+   "kappa": 0.0,
+   "r_final": 0.60267,
+   "drift_wrong": null,
+   "A_naive": {
+    "accuracy": 0.93966,
+    "mean_confidence": 0.9408040898996513,
+    "lockin": 0.00121,
+    "log_loss": 0.14894611306248629
+   },
+   "B_naive": {
+    "accuracy": 0.9411,
+    "mean_confidence": 0.9409857813429077,
+    "lockin": 0.00123,
+    "log_loss": 0.14434298145538899
+   },
+   "A_aligned": {
+    "accuracy": 0.94078,
+    "mean_confidence": 0.9402265054930038,
+    "lockin": 0.00138,
+    "log_loss": 0.14613462820119644
+   }
+  },
+  {
+   "kappa": 0.1,
+   "r_final": 0.63486,
+   "drift_wrong": -0.12534291445833368,
+   "A_naive": {
+    "accuracy": 0.92555,
+    "mean_confidence": 0.9605592899285753,
+    "lockin": 0.00692,
+    "log_loss": 0.2049813349955822
+   },
+   "B_naive": {
+    "accuracy": 0.96123,
+    "mean_confidence": 0.9603215055058775,
+    "lockin": 0.00095,
+    "log_loss": 0.10000122597515823
+   },
+   "A_aligned": {
+    "accuracy": 0.93248,
+    "mean_confidence": 0.9323428076581692,
+    "lockin": 0.00118,
+    "log_loss": 0.16924470805728292
+   }
+  },
+  {
+   "kappa": 0.2,
+   "r_final": 0.66185,
+   "drift_wrong": -0.054231047216079575,
+   "A_naive": {
+    "accuracy": 0.89686,
+    "mean_confidence": 0.974259767837756,
+    "lockin": 0.02566,
+    "log_loss": 0.365003634559971
+   },
+   "B_naive": {
+    "accuracy": 0.9743,
+    "mean_confidence": 0.9733063600791548,
+    "lockin": 0.00077,
+    "log_loss": 0.0687490707499106
+   },
+   "A_aligned": {
+    "accuracy": 0.92266,
+    "mean_confidence": 0.9245068039368534,
+    "lockin": 0.0011,
+    "log_loss": 0.18790041417559558
+   }
+  },
+  {
+   "kappa": 0.3,
+   "r_final": 0.67912,
+   "drift_wrong": 0.03886387773323352,
+   "A_naive": {
+    "accuracy": 0.85662,
+    "mean_confidence": 0.9843091038162762,
+    "lockin": 0.06603,
+    "log_loss": 0.6827172891820957
+   },
+   "B_naive": {
+    "accuracy": 0.98153,
+    "mean_confidence": 0.9807460202174656,
+    "lockin": 0.00068,
+    "log_loss": 0.05015125452249361
+   },
+   "A_aligned": {
+    "accuracy": 0.91641,
+    "mean_confidence": 0.9169973124771612,
+    "lockin": 0.00124,
+    "log_loss": 0.20551625644665095
+   }
+  },
+  {
+   "kappa": 0.4,
+   "r_final": 0.68728,
+   "drift_wrong": 0.13938837429499573,
+   "A_naive": {
+    "accuracy": 0.80984,
+    "mean_confidence": 0.9908591103935026,
+    "lockin": 0.12599,
+    "log_loss": 1.1812502631116288
+   },
+   "B_naive": {
+    "accuracy": 0.98487,
+    "mean_confidence": 0.984277204552372,
+    "lockin": 0.0006,
+    "log_loss": 0.0411709189840659
+   },
+   "A_aligned": {
+    "accuracy": 0.90875,
+    "mean_confidence": 0.9086356113817011,
+    "lockin": 0.001,
+    "log_loss": 0.21997453581979942
+   }
+  },
+  {
+   "kappa": 0.5,
+   "r_final": 0.68521,
+   "drift_wrong": 0.23003482269220024,
+   "A_naive": {
+    "accuracy": 0.76364,
+    "mean_confidence": 0.9954639864569831,
+    "lockin": 0.19336,
+    "log_loss": 1.8342754363456095
+   },
+   "B_naive": {
+    "accuracy": 0.98559,
+    "mean_confidence": 0.9850045489222928,
+    "lockin": 0.00062,
+    "log_loss": 0.03937394199128806
+   },
+   "A_aligned": {
+    "accuracy": 0.90208,
+    "mean_confidence": 0.9020319369720806,
+    "lockin": 0.00106,
+    "log_loss": 0.238593027226133
+   }
+  },
+  {
+   "kappa": 0.6,
+   "r_final": 0.67608,
+   "drift_wrong": 0.3015306954447742,
+   "A_naive": {
+    "accuracy": 0.72064,
+    "mean_confidence": 0.9979964514604563,
+    "lockin": 0.25443,
+    "log_loss": 2.5481181016373844
+   },
+   "B_naive": {
+    "accuracy": 0.98339,
+    "mean_confidence": 0.9828738235311333,
+    "lockin": 0.00064,
+    "log_loss": 0.04526601438692949
+   },
+   "A_aligned": {
+    "accuracy": 0.89433,
+    "mean_confidence": 0.8951315459835739,
+    "lockin": 0.00099,
+    "log_loss": 0.25348269745379004
+   }
+  },
+  {
+   "kappa": 0.7,
+   "r_final": 0.66757,
+   "drift_wrong": 0.3651245413054445,
+   "A_naive": {
+    "accuracy": 0.69424,
+    "mean_confidence": 0.9994452415149851,
+    "lockin": 0.29739,
+    "log_loss": 3.3258904655411046
+   },
+   "B_naive": {
+    "accuracy": 0.98256,
+    "mean_confidence": 0.9821467855944511,
+    "lockin": 0.00066,
+    "log_loss": 0.04672429767639929
+   },
+   "A_aligned": {
+    "accuracy": 0.88814,
+    "mean_confidence": 0.8884496878817549,
+    "lockin": 0.00118,
+    "log_loss": 0.2669141154015844
+   }
+  },
+  {
+   "kappa": 0.8,
+   "r_final": 0.65902,
+   "drift_wrong": 0.4196938228524708,
+   "A_naive": {
+    "accuracy": 0.67203,
+    "mean_confidence": 0.9998986343787558,
+    "lockin": 0.32629,
+    "log_loss": 4.051219153158483
+   },
+   "B_naive": {
+    "accuracy": 0.98021,
+    "mean_confidence": 0.9794148540887019,
+    "lockin": 0.0007,
+    "log_loss": 0.053276225723176494
+   },
+   "A_aligned": {
+    "accuracy": 0.88249,
+    "mean_confidence": 0.8818921340106012,
+    "lockin": 0.00084,
+    "log_loss": 0.277042039837662
+   }
+  },
+  {
+   "kappa": 0.9,
+   "r_final": 0.62584,
+   "drift_wrong": 0.3715888642624581,
+   "A_naive": {
+    "accuracy": 0.6274,
+    "mean_confidence": 0.9998709154337307,
+    "lockin": 0.37074,
+    "log_loss": 4.047911208840335
+   },
+   "B_naive": {
+    "accuracy": 0.96108,
+    "mean_confidence": 0.959932344184835,
+    "lockin": 0.00103,
+    "log_loss": 0.10089510506395145
+   },
+   "A_aligned": {
+    "accuracy": 0.87461,
+    "mean_confidence": 0.8760738161928943,
+    "lockin": 0.001,
+    "log_loss": 0.291875329429037
+   }
+  }
+ ],
+ "E2_rho_robustness": [
+  {
+   "rho": 0.55,
+   "A_naive": {
+    "accuracy": 0.63661,
+    "mean_confidence": 0.9806140418695953,
+    "lockin": 0.1749,
+    "log_loss": 1.6700900198674598
+   },
+   "B_naive": {
+    "accuracy": 0.8585,
+    "mean_confidence": 0.8587528322700653,
+    "lockin": 0.0005,
+    "log_loss": 0.32240253079293135
+   },
+   "A_aligned": {
+    "accuracy": 0.73717,
+    "mean_confidence": 0.7398393146473342,
+    "lockin": 0.0,
+    "log_loss": 0.5241810111358363
+   }
+  },
+  {
+   "rho": 0.6,
+   "A_naive": {
+    "accuracy": 0.76364,
+    "mean_confidence": 0.9954639864569831,
+    "lockin": 0.19336,
+    "log_loss": 1.8342754363456095
+   },
+   "B_naive": {
+    "accuracy": 0.98559,
+    "mean_confidence": 0.9850045489222928,
+    "lockin": 0.00062,
+    "log_loss": 0.03937394199128806
+   },
+   "A_aligned": {
+    "accuracy": 0.90208,
+    "mean_confidence": 0.9020319369720806,
+    "lockin": 0.00106,
+    "log_loss": 0.238593027226133
+   }
+  },
+  {
+   "rho": 0.7,
+   "A_naive": {
+    "accuracy": 0.93599,
+    "mean_confidence": 0.9985425587302833,
+    "lockin": 0.05397,
+    "log_loss": 0.6689285807967961
+   },
+   "B_naive": {
+    "accuracy": 1.0,
+    "mean_confidence": 0.9999914958995056,
+    "lockin": 0.0,
+    "log_loss": 9.582452725658105e-06
+   },
+   "A_aligned": {
+    "accuracy": 0.99617,
+    "mean_confidence": 0.9960766777564374,
+    "lockin": 0.00023,
+    "log_loss": 0.010983159994042833
+   }
+  }
+ ],
+ "E3_threshold": [
+  {
+   "kappa": 0.1,
+   "r": 0.63486,
+   "drift": -0.12534291445833368,
+   "kappa_star": 0.2888410064191526,
+   "lockin": 0.00692
+  },
+  {
+   "kappa": 0.2,
+   "r": 0.66185,
+   "drift": -0.054231047216079575,
+   "kappa_star": 0.26729593091621767,
+   "lockin": 0.02566
+  },
+  {
+   "kappa": 0.3,
+   "r": 0.67912,
+   "drift": 0.03886387773323352,
+   "kappa_star": 0.2568023982588799,
+   "lockin": 0.06603
+  },
+  {
+   "kappa": 0.4,
+   "r": 0.68728,
+   "drift": 0.13938837429499573,
+   "kappa_star": 0.2524866287835729,
+   "lockin": 0.12599
+  },
+  {
+   "kappa": 0.5,
+   "r": 0.68521,
+   "drift": 0.23003482269220024,
+   "kappa_star": 0.25354737407112804,
+   "lockin": 0.19336
+  },
+  {
+   "kappa": 0.6,
+   "r": 0.67608,
+   "drift": 0.3015306954447742,
+   "kappa_star": 0.2585070513631421,
+   "lockin": 0.25443
+  },
+  {
+   "kappa": 0.7,
+   "r": 0.66757,
+   "drift": 0.3651245413054445,
+   "kappa_star": 0.2635916089478057,
+   "lockin": 0.29739
+  },
+  {
+   "kappa": 0.8,
+   "r": 0.65902,
+   "drift": 0.4196938228524708,
+   "kappa_star": 0.2692231021250199,
+   "lockin": 0.32629
+  },
+  {
+   "kappa": 0.9,
+   "r": 0.62584,
+   "drift": 0.3715888642624581,
+   "kappa_star": 0.2980353335169477,
+   "lockin": 0.37074
+  }
+ ],
+ "E4_remedies": {
+  "none (naive)": {
+   "accuracy": 0.76236,
+   "mean_confidence": 0.9957189854130947,
+   "lockin": 0.19386,
+   "log_loss": 1.823671736948255
+  },
+  "structural (cut loop)": {
+   "accuracy": 0.9399,
+   "mean_confidence": 0.9410950860963428,
+   "lockin": 0.00132,
+   "log_loss": 0.14893400064164808
+  },
+  "inferential (known kappa)": {
+   "accuracy": 0.90196,
+   "mean_confidence": 0.9026692307501979,
+   "lockin": 0.00088,
+   "log_loss": 0.23622569211630515
+  },
+  "epistemic: passive learner": {
+   "final_accuracy": 0.88952,
+   "announcement_accuracy": 0.798084,
+   "probe_rate": 0.0,
+   "kappa_abs_error": 0.1271881395054939,
+   "kappa_entropy": 1.8585871157941054,
+   "log_loss": 0.2687138530120294,
+   "lockin": 0.0016
+  },
+  "epistemic: random probes eps=0.1": {
+   "final_accuracy": 0.89128,
+   "announcement_accuracy": 0.7709799999999998,
+   "probe_rate": 0.050105333333333335,
+   "kappa_abs_error": 0.12581184936366385,
+   "kappa_entropy": 1.8489783615212532,
+   "log_loss": 0.2603617924252106,
+   "lockin": 0.00152
+  },
+  "epistemic: random probes eps=0.3": {
+   "final_accuracy": 0.89712,
+   "announcement_accuracy": 0.7118926666666667,
+   "probe_rate": 0.14974933333333335,
+   "kappa_abs_error": 0.12260699239592349,
+   "kappa_entropy": 1.8300656778879094,
+   "log_loss": 0.2530357845701346,
+   "lockin": 0.0015
+  },
+  "epistemic: EFE beta=0.5": {
+   "final_accuracy": 0.88956,
+   "announcement_accuracy": 0.7987553333333334,
+   "probe_rate": 0.003944,
+   "kappa_abs_error": 0.12726701190610415,
+   "kappa_entropy": 1.8594052756078512,
+   "log_loss": 0.26641752787866,
+   "lockin": 0.00124
+  },
+  "epistemic: EFE beta=1.0": {
+   "final_accuracy": 0.8921,
+   "announcement_accuracy": 0.7992426666666667,
+   "probe_rate": 0.006896000000000001,
+   "kappa_abs_error": 0.12674270773911217,
+   "kappa_entropy": 1.8588922107922137,
+   "log_loss": 0.26333038234108525,
+   "lockin": 0.0014
+  },
+  "epistemic: EFE beta=2.0": {
+   "final_accuracy": 0.89026,
+   "announcement_accuracy": 0.7986713333333333,
+   "probe_rate": 0.009182000000000003,
+   "kappa_abs_error": 0.12661049968398125,
+   "kappa_entropy": 1.8588228306752566,
+   "log_loss": 0.2660885676067143,
+   "lockin": 0.00152
+  },
+  "epistemic: EFE beta=4.0": {
+   "final_accuracy": 0.89138,
+   "announcement_accuracy": 0.8002313333333332,
+   "probe_rate": 0.013328666666666666,
+   "kappa_abs_error": 0.12706897126352953,
+   "kappa_entropy": 1.8573471464415878,
+   "log_loss": 0.2648610607670259,
+   "lockin": 0.0015
+  }
+ },
+ "E4_learner_by_kappa": [
+  {
+   "kappa_true": 0.2,
+   "naive": 0.89784,
+   "known": 0.92308,
+   "passive": {
+    "final_accuracy": 0.91956,
+    "announcement_accuracy": 0.8236666666666667,
+    "probe_rate": 0.0,
+    "kappa_abs_error": 0.1012859029877837,
+    "kappa_entropy": 1.738061060840571,
+    "log_loss": 0.20744305818042158,
+    "lockin": 0.00058
+   },
+   "efe1": {
+    "final_accuracy": 0.91928,
+    "announcement_accuracy": 0.8218446666666669,
+    "probe_rate": 0.006996,
+    "kappa_abs_error": 0.10131650412412722,
+    "kappa_entropy": 1.739311616511092,
+    "log_loss": 0.20717406970015448,
+    "lockin": 0.0005
+   },
+   "random30": {
+    "final_accuracy": 0.92186,
+    "announcement_accuracy": 0.7268246666666667,
+    "probe_rate": 0.149432,
+    "kappa_abs_error": 0.09974512625611413,
+    "kappa_entropy": 1.7089935723127139,
+    "log_loss": 0.1977451597914991,
+    "lockin": 0.00086
+   }
+  },
+  {
+   "kappa_true": 0.5,
+   "naive": 0.76236,
+   "known": 0.90196,
+   "passive": {
+    "final_accuracy": 0.88952,
+    "announcement_accuracy": 0.798084,
+    "probe_rate": 0.0,
+    "kappa_abs_error": 0.1271881395054939,
+    "kappa_entropy": 1.8585871157941054,
+    "log_loss": 0.2687138530120294,
+    "lockin": 0.0016
+   },
+   "efe1": {
+    "final_accuracy": 0.8921,
+    "announcement_accuracy": 0.7992426666666667,
+    "probe_rate": 0.006896000000000001,
+    "kappa_abs_error": 0.12674270773911217,
+    "kappa_entropy": 1.8588922107922137,
+    "log_loss": 0.26333038234108525,
+    "lockin": 0.0014
+   },
+   "random30": {
+    "final_accuracy": 0.89712,
+    "announcement_accuracy": 0.7118926666666667,
+    "probe_rate": 0.14974933333333335,
+    "kappa_abs_error": 0.12260699239592349,
+    "kappa_entropy": 1.8300656778879094,
+    "log_loss": 0.2530357845701346,
+    "lockin": 0.0015
+   }
+  },
+  {
+   "kappa_true": 0.8,
+   "naive": 0.67326,
+   "known": 0.88326,
+   "passive": {
+    "final_accuracy": 0.87474,
+    "announcement_accuracy": 0.7822593333333331,
+    "probe_rate": 0.0,
+    "kappa_abs_error": 0.0933125937631592,
+    "kappa_entropy": 1.488754621459879,
+    "log_loss": 0.2985111364974096,
+    "lockin": 0.0017
+   },
+   "efe1": {
+    "final_accuracy": 0.87446,
+    "announcement_accuracy": 0.7835306666666665,
+    "probe_rate": 0.00618,
+    "kappa_abs_error": 0.0935572274463415,
+    "kappa_entropy": 1.4885777967325007,
+    "log_loss": 0.29712581263303645,
+    "lockin": 0.00168
+   },
+   "random30": {
+    "final_accuracy": 0.8792,
+    "announcement_accuracy": 0.7006519999999998,
+    "probe_rate": 0.14966466666666672,
+    "kappa_abs_error": 0.08915584590048542,
+    "kappa_entropy": 1.4550528116400714,
+    "log_loss": 0.2875802010825969,
+    "lockin": 0.00142
+   }
+  }
+ ]
+}
